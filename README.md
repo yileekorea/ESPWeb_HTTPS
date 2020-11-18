@@ -1,7 +1,7 @@
 
 ## Compile
 
-first copy and edit the `lib/private/PrivateConfig.hpp.sample` file to `lib/private/PrivateConfig.hpp`
+`lib/private/PrivateConfig.hpp`
 
 ## Notice
 
