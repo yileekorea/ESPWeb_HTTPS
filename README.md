@@ -1,4 +1,3 @@
-# This is a slightly modified version of the BearSSL sample server for the ESP8266 Arduino framework using PlatformIO
 
 ## Compile
 
