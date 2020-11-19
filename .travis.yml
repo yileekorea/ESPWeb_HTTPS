@@ -64,7 +64,6 @@ script:
   - platformio --version
   - platformio run -e ESPWeb_deploy
   - platformio run -t buildfs -e ESPWeb_deploy
-
   - RELEASE_VER="R.0.0.1"
   - echo $TRAVIS_BRANCH / $RELEASE_VER
 
