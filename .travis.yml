@@ -43,7 +43,7 @@ after_success:
   - git commit -m "Set build VERSION number" public_version
   - git tag $GIT_TAG -a -m "Generated tag from TravisCI build $TRAVIS_BUILD_NUMBER"
 #  - git push --quiet https://$GITHUBKEY@github.com/yileekorea/ESPWeb_HTTPS $GIT_TAG > /dev/null 2>&1
-  - git push --quiet https://$GITHUBKEY@github.com/yileekorea/ESP-main $GIT_TAG > /dev/null 2>&1
+  - git push --quiet https://$GITHUBKEY@github.com/yileekorea/ESP-new $GIT_TAG > /dev/null 2>&1
   - echo $TRAVIS_TAG
 
 deploy:
