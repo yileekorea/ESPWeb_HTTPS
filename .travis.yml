@@ -1,6 +1,5 @@
-# Continuous Integration (CI) is the practice, in software
-# engineering, of merging all developer working copies with a shared mainline
-# several times a day < http://docs.platformio.org/page/ci/index.html >
+
+//docs.platformio.org/page/ci/index.html >
 #
 # Documentation:
 #
@@ -11,38 +10,6 @@
 #   < http://docs.platformio.org/page/ci/travis.html >
 #
 # * User Guide for `platformio ci` command
-#   < http://docs.platformio.org/page/userguide/cmd_ci.html >
-#
-#
-# Please choice one of the following templates (proposed below) and uncomment
-# it (remove "# " before each line) or use own configuration according to the
-# Travis CI documentation (see above).
-#
-
-#
-# Template #2: The project is intended to by used as a library with examples
-#
-
-# language: python
-# python:
-#     - "2.7"
-#
-# sudo: false
-# cache:
-#     directories:
-#         - "~/.platformio"
-#
-# env:
-#     - PLATFORMIO_CI_SRC=path/to/test/file.c
-#     - PLATFORMIO_CI_SRC=examples/file.ino
-#     - PLATFORMIO_CI_SRC=path/to/test/directory
-#
-# install:
-#     - pip install -U platformio
-#     - platformio update
-#
-# script:
-#     - platformio ci --lib="." --board=ID_1 --board=ID_2 --board=ID_N
 
 language: python
 python:
@@ -94,4 +61,4 @@ deploy:
 #api-key:
 #    secure: kIx1qdKzZ3rSrWkjYuQZ6VxUF6+GGnSDRz3QqdglN1LehdhI9XSEDiJ46SCHJWWoHAXeckJMz4BbP9wcSAJQzwfxQKd9uJNCF/er/2LwzQ68i5/XSLuZtHm/aoHA10N6wQV1cX1ZTPZnXJ235ScrMfPabTjsxjtpLvox0mwmphyNmryegVwA6HI66DPw3niEAPqRvQ66/9+bZmQVHonVzp2HDDREGSUNPuD9nD5u5xrsKyGR4sZ0SL0kr5gF89C8FmeNZ6J4JR+pt1tzczomdhCz1SfQqGWCUKPhbAqT2VpV8Npqug56fWHDX3RHOnm3FFnup8TrfA1mmAfqXHBPu5kmatcQUCYs/hxKC1HxghSbx1LgflZ6etgK3hn3b+Y9fPWcnvJKfGtZ9zbcu0MzHRjPTD7382xooB/+tk0rkExIDwjyW2d1FsngtqVTaubFCwFGXrrDfuiP9UAHjOZv1XpMKqAQ5TYMyhIrGxqm7oRxT5CLdb3/G7l5ESX2J5LlF5AWsMx07tWdRhwgs6QuGO3SXkJZrKhwKOi/re5P1f3yljdGK0HDSabaxKvLWb+2CnlCqySp+y+yvy1cs3nsvb3fd/E64MFjJBGupxAUTnagdEHJRJaiRs05e/eROKTGIfeH/CCXT7nn9E9/3TuYjM1d5OOkSogTyfcOA4rRm7o=
 
-api_key: "d26722ba798287f4ba01c32e4e717b26dac5d731"
+api_key: d26722ba798287f4ba01c32e4e717b26dac5d731
