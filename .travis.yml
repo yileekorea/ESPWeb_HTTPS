@@ -42,8 +42,8 @@ after_success:
   - echo -n $GIT_TAG > public_version
   - git commit -m "Set build VERSION number" public_version
   - git tag $GIT_TAG -a -m "Generated tag from TravisCI build $TRAVIS_BUILD_NUMBER"
-#  - git push --quiet https://$GITHUBKEY@github.com/yileekorea/ESPWeb_HTTPS $GIT_TAG > /dev/null 2>&1
-  - git push --quiet https://$GITHUBKEY@github.com/yileekorea/ESP-new $GIT_TAG > /dev/null 2>&1
+  - git push --quiet https://$GITHUBKEY@github.com/yileekorea/ESPWeb_HTTPS $GIT_TAG > /dev/null 2>&1
+#  - git push --quiet https://$GITHUBKEY@github.com/yileekorea/ESP-new $GIT_TAG > /dev/null 2>&1
   - echo $TRAVIS_TAG
 
 deploy:
@@ -55,8 +55,8 @@ deploy:
   - ".pio/build/ESPWeb_deploy/spiffs.bin"
 
   on:
-#    repo: yileekorea/ESPWeb_HTTPS 
-    repo: yileekorea/ESP-new 
+    repo: yileekorea/ESPWeb_HTTPS 
+#    repo: yileekorea/ESP-new 
     all_branches: true
     condition: $RELEASE_VER =~ ^(R.)[0-9]+\.[0-9]+\.[0-9]+$
 
